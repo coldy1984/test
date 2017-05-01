@@ -1,0 +1,6 @@
+ul
+- @repos.each do |repo|
+  ol
+    = link_to "#{repo.author}/#{repo.name}", repo_path(repo)
+
+

@@ -1,0 +1,6 @@
+= simple_form_for @repo do |f|
+  = f.input :author, required: true
+  = f.input :token, required: true
+  = f.input :name, password: true
+
+  = f.submit
