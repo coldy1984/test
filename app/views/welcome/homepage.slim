@@ -1,0 +1,8 @@
+- if user_signed_in?
+  .col-md-6 Hello #{current_user.name}
+  .col-md-6
+    =link_to "Add new repo", new_repo_path, class: 'btn btn-primary'
+- else
+  .col-md-6 Hello
+  .col-md-6
+    = link_to "Sign up", new_user_registration_path, class: 'btn btn-primary'
